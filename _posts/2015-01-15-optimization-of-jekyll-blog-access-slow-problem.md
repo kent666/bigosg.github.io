@@ -65,8 +65,8 @@ baiduTongji:
             var _hmt = _hmt || [];
             (function() {
                 var hm = document.createElement("script");
-                hm.src = "//hm.baidu.com/hm.js?你的统计标识符";
-                var s = document.getElementsByTagName("script")[0]; 
+                hm.src = "//hm.baidu.com/hm.js?304546b739a8551720f0c03581b01008";
+                var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(hm, s);
             })();
         </script>
