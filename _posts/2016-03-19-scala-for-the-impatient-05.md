@@ -11,11 +11,11 @@ category: "scala"
 
 - 构建一个不可变的映射。
 
-```scala
+{% highlight scala linenos %}
 
 val scores = Map("scala"->10,"java"->20) //不可变map,值不能改变
 
-```
+{% endhighlight %}
 
 - 构建一个可变的映射。
 
