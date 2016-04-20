@@ -3,7 +3,7 @@ source:       .
 destination:  ./_site
 plugins:      ./_plugins
 layouts:      ./_layouts
-paginate:     8
+paginate:     10
 
 # Handling Reading
 safe:         false
@@ -39,7 +39,7 @@ timezone:      null
 
 
 #Site config
-title: 9leg
+title: Brian's Blog
 description: java技术文章
 keywords: Java
 url: http://miknows.com
@@ -125,7 +125,7 @@ disqus:
 
 duoshuo:
   config: true
-  id: 9leg
+  id: brianslee2010
 
 #baidu share config
 baiduShare:
