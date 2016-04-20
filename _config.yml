@@ -62,12 +62,11 @@ nav:
 #Author config
 author:
     name: Brian Li
-    email: lizhifei@gmail.com
+    email: lizhifei2010@gmail.com
     imageLink: /images/header.jpg
-    simpleIntro: I Have a Dream
+    simpleIntro: Life is a journey!
     detailIntro:
-      <p>广告界的程序猿</p>
-      <p>主要使用Java,会一点Android,正在学习Scala[真是难学...].</p>
+      <p>从事移动开发，对电子地图、语音导航、Voip、社交应用等领域有一定的理解。</p>
       <p></p>
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
