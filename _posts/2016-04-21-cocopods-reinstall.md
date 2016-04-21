@@ -19,7 +19,8 @@ $ sudo rm -rf  /usr/local/bin/pod   // 移除安装包
 {% endhighlight %}
 
 - 移除 RubyGems 中的 Cocoapods程序包
-查看gems本地程序包：
+
+查看gems本地程序包
 {% highlight shell %}
 $ gem list
 {% endhighlight %}
@@ -146,7 +147,8 @@ $ sudo gem uninstall cocoapods -v 1.0.0.beta.3
 {% highlight shell %}
 Successfully uninstalled cocoapods-1.0.0.beta.3
 {% endhighlight %}
-然后安装指定版本的Cocoapods
+- 然后安装指定版本的Cocoapods
+
 {% highlight shell %}
 sudo gem install cocoapods -v 0.39.0
 {% endhighlight %}
