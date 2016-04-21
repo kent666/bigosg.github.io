@@ -160,7 +160,7 @@ Successfully uninstalled ...
 - 安装指定版本的Cocoapods
 
 {% highlight shell %}
-sudo gem install cocoapods -v 0.39.0
+$ sudo gem install cocoapods -v 0.39.0
 {% endhighlight %}
 报错
 {% highlight shell %}
@@ -169,11 +169,11 @@ ERROR:  While executing gem ... (Errno::EPERM)
 {% endhighlight %}
 OSX 10.11的权限问题，我们把安装路径换成/usr/local/bin，执行命令：
 {% highlight shell %}
-sudo gem install -n /usr/local/bin cocoapods -v 0.39.0
+$ sudo gem install -n /usr/local/bin cocoapods -v 0.39.0
 {% endhighlight %}
 安装成功，查看版本：
 {% highlight shell %}
-pod --version
+$ pod --version
 {% endhighlight %}
 输出
 {% highlight shell %}
@@ -181,8 +181,8 @@ pod --version
 {% endhighlight %}
 执行以下命令
 {% highlight shell %}
-pod repo remove master
-pod setup
-pod install
+$ pod repo remove master
+$ pod setup
+$ pod install
 {% endhighlight %}
 更新完成。
