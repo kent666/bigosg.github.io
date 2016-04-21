@@ -179,7 +179,7 @@ pod --version
 {% highlight shell %}
 0.39.0
 {% endhighlight %}
-然后在项目Podfile文件路径执行 **pod install**,出现**Updating local specs repositories**的情况，一直等待着下载，就是不见有反应，后来发现是使用命令**pod install**被墙了，在网上查找到了新的命令
+然后在项目Podfile文件路径执行 **pod install**, 出现 **Updating local specs repositories** 的情况，一直等待着下载，就是不见有反应，后来发现是使用命令 **pod install** 被墙了，在网上查找到了新的命令
 {% highlight shell %}
 pod install --verbose --no-repo-update
 {% endhighlight %}
