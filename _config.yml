@@ -23,7 +23,7 @@ unpublished:  false
 # Conversion
 markdown:     kramdown
 highlighter:  rouge
-lsi:          true
+lsi:          false
 excerpt_separator: "\n\n"
 
 # Serving
