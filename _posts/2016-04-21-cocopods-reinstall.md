@@ -155,3 +155,16 @@ sudo gem install cocoapods -v 0.39.0
 ERROR:  While executing gem ... (Errno::EPERM)
     Operation not permitted - /usr/bin/pod
 {% endhighlight %}
+OSX 10.11的权限问题，我们把安装路径换成/usr/local/bin，执行命令：
+{% highlight shell %}
+sudo gem install -n /usr/local/bin cocoapods
+{% endhighlight %}
+安装成功，查看版本：
+{% highlight shell %}
+pod --version
+{% endhighlight %}
+输出
+{% highlight shell %}
+0.39.0
+{% endhighlight %}
+然后在项目Podfile文件路径执行 **pod update**,完成依赖库的更新。
