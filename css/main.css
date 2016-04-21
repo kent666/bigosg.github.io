@@ -136,7 +136,7 @@ a         { color: #91736b; text-decoration: none; }
 }
 .container {
     position: relative;
-    width: 1040px;
+    width: 960px;
     height: auto;
     min-height: 500px;
     margin: 0 auto;
@@ -144,8 +144,8 @@ a         { color: #91736b; text-decoration: none; }
 
 .main {
     float: left;
-    width: 768px;
-    padding: 20px 10px;
+    width: 640px;
+    padding: 40px 30px;
     min-height: 600px;
     height: auto;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
