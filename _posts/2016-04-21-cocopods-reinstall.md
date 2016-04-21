@@ -13,15 +13,13 @@ category: "iOS"
 查找的结果是版本太高，所以需要降低Cocoapods的版本来解决第三方库的兼容问题。
 
 - 移除pod组件
-查看cocopods 安装的地址，并删除程序包
 {% highlight shell %}
 $ which pod   // 查看安装path，输出**/usr/local/bin/pod**
 $ sudo rm -rf  /usr/local/bin/pod   // 移除安装包
 {% endhighlight %}
 
 - 移除 RubyGems 中的 Cocoapods程序包
-RubyGems（简称 gems）是一个用于对 Ruby组件进行打包的 Ruby 打包系统。 它提供一个分发 Ruby 程序和库的标准格式，还提供一个管理程序包安装的工具。
-查看gems本地程序包
+查看gems本地程序包：
 {% highlight shell %}
 $ gem list
 {% endhighlight %}
@@ -126,4 +124,34 @@ tzinfo (1.2.2)
 xcinvoke (0.2.0)
 xcodeproj (1.0.0.beta.2, 0.28.2)
 yell (2.0.5)
+{% endhighlight %}
+
+发现Cocoapods的程序包
+{% highlight shell %}
+cocoapods (1.0.0.beta.3)
+cocoapods-core (1.0.0.beta.3, 0.39.0)
+cocoapods-deintegrate (1.0.0.beta.1)
+cocoapods-downloader (1.0.0.beta.1, 0.9.3)
+cocoapods-plugins (1.0.0.beta.1, 0.4.2)
+cocoapods-search (1.0.0.beta.1, 0.1.0)
+cocoapods-stats (1.0.0.beta.3, 0.6.2)
+cocoapods-trunk (1.0.0.beta.2, 0.6.4)
+cocoapods-try (1.0.0.beta.2, 0.5.1)
+{% endhighlight %}
+移除程序包
+{% highlight shell %}
+$ sudo gem uninstall cocoapods -v 1.0.0.beta.3
+{% endhighlight %}
+输出
+{% highlight shell %}
+Successfully uninstalled cocoapods-1.0.0.beta.3
+{% endhighlight %}
+然后安装指定版本的Cocoapods
+{% highlight shell %}
+sudo gem install cocoapods -v 0.39.0
+{% endhighlight %}
+报错
+{% highlight shell %}
+ERROR:  While executing gem ... (Errno::EPERM)
+    Operation not permitted - /usr/bin/pod
 {% endhighlight %}
