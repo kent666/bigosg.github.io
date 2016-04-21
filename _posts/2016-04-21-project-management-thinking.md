@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Java注解全面解析
-date: 2016-01-21 17:03:35
-category: "java"
+title: 关于项目管理的一些思考
+date: 2016-04-21 19:42:35
+category: "项目管理"
 ---
 
 注解解析,包含基本语法,注解元素,快捷方式和JDK1.8注解增强的说明
