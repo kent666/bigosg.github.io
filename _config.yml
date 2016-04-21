@@ -56,8 +56,8 @@ nav:
     url: /archives.html
   - text: 关于我
     url: /about.html
-  - text: 友情链接
-    url: /links.html
+  # - text: 友情链接
+  #   url: /links.html
 
 #Author config
 author:
