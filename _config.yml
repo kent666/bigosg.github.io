@@ -129,3 +129,6 @@ duoshuo:
 #baidu share config
 baiduShare:
   config: false
+  
+markdown:     kramdown
+highlighter:  rouge
