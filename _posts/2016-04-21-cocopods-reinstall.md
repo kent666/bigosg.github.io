@@ -141,11 +141,19 @@ cocoapods-try (1.0.0.beta.2, 0.5.1)
 {% endhighlight %}
 移除程序包
 {% highlight shell %}
-$ sudo gem uninstall cocoapods -v 1.0.0.beta.3
+$ sudo gem uninstall cocoapods
+$ sudo gem uninstall cocoapods-core
+$ sudo gem uninstall cocoapods-deintegrate
+$ sudo gem uninstall cocoapods-downloader
+$ sudo gem uninstall cocoapods-plugins
+$ sudo gem uninstall cocoapods-search
+$ sudo gem uninstall cocoapods-stats
+$ sudo gem uninstall cocoapods-trunk
+$ sudo gem uninstall cocoapods-try
 {% endhighlight %}
 输出
 {% highlight shell %}
-Successfully uninstalled cocoapods-1.0.0.beta.3
+Successfully uninstalled ...
 {% endhighlight %}
 - 然后安装指定版本的Cocoapods
 
@@ -159,7 +167,7 @@ ERROR:  While executing gem ... (Errno::EPERM)
 {% endhighlight %}
 OSX 10.11的权限问题，我们把安装路径换成/usr/local/bin，执行命令：
 {% highlight shell %}
-sudo gem install -n /usr/local/bin cocoapods
+sudo gem install -n /usr/local/bin cocoapods -v 0.39.0
 {% endhighlight %}
 安装成功，查看版本：
 {% highlight shell %}
