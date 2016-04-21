@@ -109,7 +109,7 @@ a         { color: #91736b; text-decoration: none; }
     width: 270px;
     padding-top: 80px;
     height: 30px;
-    text-align: right;
+    text-align: center;
 }
 .follow a {
     text-decoration: none;
@@ -136,7 +136,7 @@ a         { color: #91736b; text-decoration: none; }
 }
 .container {
     position: relative;
-    width: 1024px;
+    width: 960px;
     height: auto;
     min-height: 500px;
     margin: 0 auto;
@@ -144,7 +144,7 @@ a         { color: #91736b; text-decoration: none; }
 
 .main {
     float: left;
-    width: 800px;
+    width: 600px;
     padding: 40px 30px;
     min-height: 600px;
     height: auto;
