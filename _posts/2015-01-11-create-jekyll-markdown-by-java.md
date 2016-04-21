@@ -2,7 +2,7 @@
 layout: post
 title: 初始化Jekyll的markdown文件
 date: 2015-01-11 15:17:32
-category: "other"
+category: "Jekyll"
 ---
 
 自从用了Jekyll，每次写文章前，在正文开始处都要加入一段描述（[FrontMatter](http://jekyllrb.com/docs/frontmatter/){:target="_blank"}）。下面就是这篇文章的FrontMatter。
@@ -20,21 +20,21 @@ category: "other"
 
 {% highlight java %}
 public class CreateMDFile {
-	
+
 	private static final String USER_HOME = "/Users/zhujiajun";
-	
+
 	private static final String POST_DIR = "/Work/_posts";
-	
+
 	private static final String MARKDOWN_RULE = "---";
-	
+
 	private static final String MARKDOWN_FILE = ".md";
-	
+
 	private static final String AUTHOR = "原创文章转载请注明出处: " ;
-	
+
 	private static final String WEB_SITE = "http://www.9leg.com/";
-	
+
 	private static final String HTML = ".html";
-	
+
 	public static void main(String[] args) {
 		//default file title
 		String fileTitle = "file-title";
@@ -50,20 +50,20 @@ public class CreateMDFile {
 			postTitle = args[1];
 			postCategory = args[2];
 			isReprint = args[3].equals("1") ? true : false;
-		} 
-		
+		}
+
 		String userHome = System.getProperties().getProperty("user.home",USER_HOME);
-		
+
 		String fileTime = getFormatTime("yyyy-MM-dd");
 		// /Users/zhujiajun/Work/_posts
 		String fileDir =  userHome + POST_DIR;
 		// /2015-01-11-FileTitle.md
 		String fileName = File.separator + fileTime + "-" + fileTitle + MARKDOWN_FILE;
-		
+
 		File file = new File(fileDir + fileName);
-		
+
 		String postTime = getFormatTime("yyyy-MM-dd HH:mm:ss");
-		
+
 		PrintWriter pw = null;
 		try {
 			if (!file.exists()) {
@@ -79,7 +79,7 @@ public class CreateMDFile {
 					pw.println();//空行
 				}
 				pw.println(
-						AUTHOR + "[" + postTitle +"]" + 
+						AUTHOR + "[" + postTitle +"]" +
 				"("+ WEB_SITE + postCategory + getFormatTime("/yyyy/MM/dd/") + fileTitle + HTML +")");
 				if (isReprint) {
 					pw.println();
@@ -94,7 +94,7 @@ public class CreateMDFile {
 			}
 		}
 	}
-	
+
 	static private String getFormatTime(String pattern) {
 		Objects.requireNonNull(pattern);
 		String formatTime = new SimpleDateFormat(pattern).format(new Date());
