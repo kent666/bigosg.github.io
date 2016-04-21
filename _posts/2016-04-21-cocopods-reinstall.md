@@ -13,8 +13,9 @@ category: "iOS"
 查找的结果是版本太高，所以需要降低Cocoapods的版本来解决第三方库的兼容问题。
 
 - 移除pod组件
+
 {% highlight shell %}
-$ which pod   // 查看安装path，输出**/usr/local/bin/pod**
+$ which pod   // 查看安装path，输出/usr/local/bin/pod
 $ sudo rm -rf  /usr/local/bin/pod   // 移除安装包
 {% endhighlight %}
 
@@ -155,7 +156,8 @@ $ sudo gem uninstall cocoapods-try
 {% highlight shell %}
 Successfully uninstalled ...
 {% endhighlight %}
-- 然后安装指定版本的Cocoapods
+
+- 安装指定版本的Cocoapods
 
 {% highlight shell %}
 sudo gem install cocoapods -v 0.39.0
