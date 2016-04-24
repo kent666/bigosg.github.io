@@ -47,7 +47,7 @@ category: "Android"
     - Setting Up File Sharing
     - Sharing a File
     - Requesting a Shared File
-    - Retrieving File Information
+    - **Retrieving File Information**
 - Sharing Files with NFC
     - Sending Files to Another Device
     - Receiving Files from Another Device
