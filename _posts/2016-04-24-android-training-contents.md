@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Android Training目录
+title: Android Training
 date: 2016-04-24 12:10:00
 category: "Android"
 ---
-预览了Android官网最新的Trianing内容，把内容提纲整理了一份，个人觉得比较新的内容重点标出。
+Android官网最新的Trianing提纲。
 
 ### Getting Started
 - Building Your First App
