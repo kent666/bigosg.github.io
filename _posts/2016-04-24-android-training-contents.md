@@ -128,8 +128,7 @@ category: "Android"
     - Receiving Location Updates
     - Displaying a Location Address
     - Creating and Monitoring Geofences
-
-### Adding Maps
+- Adding Maps
 
 ### Building Apps with Contacts & Sign-In
 - Accessing Contacts Data
