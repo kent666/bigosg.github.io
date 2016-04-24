@@ -16,7 +16,7 @@ category: "Android"
     - Supporting Different Languages
     - Supporting Different Screens
     - Supporting Different Platform Versions
-- `Manage The Lifecycle`
+- Manage The Lifecycle
     - Starting Activity
     - Pausing and Resuming an Activity
     - Stopping and Restarting an Activity
@@ -47,7 +47,7 @@ category: "Android"
     - Setting Up File Sharing
     - Sharing a File
     - Requesting a Shared File
-    - **Retrieving File Information**
+    - Retrieving File Information
 - Sharing Files with NFC
     - Sending Files to Another Device
     - Receiving Files from Another Device
