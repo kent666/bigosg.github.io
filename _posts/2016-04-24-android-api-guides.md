@@ -55,33 +55,33 @@ category: "Android"
     - Typed Array
 
 ### App Manifest
-- <action>
-- <activity>
-- <activity-alias>
-- <application>
-- <category>
-- <compatible-screens>
-- <data>
-- <grant-uri-permission>
-- <instrumentation>
-- <intent-filter>
-- <manifest>
-- <meta-data>
-- <path-permission>
-- <permission>
-- <permission-group>
-- <permission-tree>
-- <provider>
-- <receiver>
-- <service>
-- <supports-gl-texture>
-- <supports-screens>
-- <uses-configuration>
-- <uses-feature>
-- <uses-library>
-- <uses-permission>
-- <uses-permission-sdk-23>
-- <uses-sdk>
+- action
+- activity
+- activity-alias
+- application
+- category
+- compatible-screens
+- data
+- grant-uri-permission
+- instrumentation
+- intent-filter
+- manifest
+- meta-data
+- path-permission
+- permission
+- permission-group
+- permission-tree
+- provider
+- receiver
+- service
+- supports-gl-texture
+- supports-screens
+- uses-configuration
+- uses-feature
+- uses-library
+- uses-permission
+- uses-permission-sdk-23
+- uses-sdk
 
 ### User Interface
 - UI Overview
