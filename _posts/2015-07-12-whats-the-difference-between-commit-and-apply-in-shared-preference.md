@@ -2,7 +2,7 @@
 layout: post
 title: SharedPreference.Editor中commit和apply区别
 date: 2015-07-12 18:53:30
-category: "android"
+category: "Android"
 ---
 
 学Android也有段时间了,至今还没写过文章,可能是我懒吧(其实就是懒- -),今天在练习项目的时候，被IDEA一个warning弄懵了,看下图:
@@ -44,7 +44,7 @@ As SharedPreferences instances are singletons within a process, it's safe to rep
 public SharedPreferences getPreferences(int mode) {
        return getSharedPreferences(getLocalClassName(), mode);
 }
-    
+
 {% endhighlight %}
 
 Activity的方法,调用的还是父类的*getSharedPreferences*方法,就是第三个方法，只不过这里保存文件的文件名称,使用默认的类名罢了.
@@ -55,7 +55,7 @@ public static SharedPreferences getDefaultSharedPreferences(Context context) {
         return context.getSharedPreferences(getDefaultSharedPreferencesName(context),
                 getDefaultSharedPreferencesMode());
 }
-   
+
 private static String getDefaultSharedPreferencesName(Context context) {
         return context.getPackageName() + "_preferences";
 }
