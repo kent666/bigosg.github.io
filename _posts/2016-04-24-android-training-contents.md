@@ -16,7 +16,7 @@ category: "Android"
     - Supporting Different Languages
     - Supporting Different Screens
     - Supporting Different Platform Versions
-- Manage The Lifecycle
+- `Manage The Lifecycle`
     - Starting Activity
     - Pausing and Resuming an Activity
     - Stopping and Restarting an Activity
