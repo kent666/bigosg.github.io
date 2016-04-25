@@ -9,30 +9,30 @@ category: "Android"
 
 ### HTTP & Socket
 - HTTP
-- retrofit(https://github.com/square/retrofit)
-- okhttp(https://github.com/square/okhttp)
-- android-async-http(https://github.com/loopj/android-async-http)
-- google-http-java-client(https://github.com/google/google-http-java-client)
+  - [retrofit](https://github.com/square/retrofit)
+  - [okhttp](https://github.com/square/okhttp)
+  - [android-async-http](https://github.com/loopj/android-async-http)
+  - [google-http-java-client](https://github.com/google/google-http-java-client)
 - Socket
-- AndroidAsync(https://github.com/koush/AndroidAsync)
-- socket.io-client-java(https://github.com/socketio/socket.io-client-java)
+  - [AndroidAsync](https://github.com/koush/AndroidAsync)
+  - [socket.io-client-java](https://github.com/socketio/socket.io-client-java)
 
 ### 异步任务
-- android-priority-jobqueue(https://github.com/yigit/android-priority-jobqueue)
-- tape(https://github.com/square/tape)
-- robospice(https://github.com/stephanenicolas/robospice)
+- [android-priority-jobqueue](https://github.com/yigit/android-priority-jobqueue)
+- [tape](https://github.com/square/tape)
+- [robospice](https://github.com/stephanenicolas/robospice)
 
 ### 数据处理
 - JSON
-  - jackson(https://github.com/FasterXML/jackson)
-  - gson(https://github.com/google/gson)
-  - fastjson(https://github.com/alibaba/fastjson)
-  - LoganSquare(https://github.com/bluelinelabs/LoganSquare)
-  - moshi(https://github.com/square/moshi)
-  - 性能对比：https://github.com/eishay/jvm-serializers/wiki/Staging-Results
+  - [jackson](https://github.com/FasterXML/jackson)
+  - [gson](https://github.com/google/gson)
+  - [fastjson](https://github.com/alibaba/fastjson)
+  - [LoganSquare](https://github.com/bluelinelabs/LoganSquare)
+  - [moshi](https://github.com/square/moshi)
+  - 性能对比：[https://github.com/eishay/jvm-serializers/wiki/Staging-Results]
 - Protocol Buffers
-  - wire(https://github.com/square/wire)
-  - Protocol Buffers(https://github.com/google/protobuf)
+  - [wire](https://github.com/square/wire)
+  - [Protocol Buffers](https://github.com/google/protobuf)
 
 ### 图片加载、显示、缓存
 - Android-Universal-Image-Loader(https://github.com/nostra13/Android-Universal-Image-Loader)
