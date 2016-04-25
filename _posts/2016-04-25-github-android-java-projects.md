@@ -76,8 +76,8 @@ category: "Android"
   - [EffectiveAndroidUI](https://github.com/pedrovgs/EffectiveAndroidUI)
 - CleanArchitecture
   - [Android-Clean-Boilerplate](https://github.com/dmilicic/Android-Clean-Boilerplate)
-    - http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html
-    - http://www.cnblogs.com/happyframework/p/3632703.html
+    - <http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html>
+    - <http://www.cnblogs.com/happyframework/p/3632703.html>
   - [Android-CleanArchitecture](https://github.com/android10/Android-CleanArchitecture)
   - [Rosie](https://github.com/Karumi/Rosie)
 
@@ -94,29 +94,29 @@ category: "Android"
 
 ### 数据绑定（Data Binding）
 - [RoboBinding](https://github.com/RoboBinding/RoboBinding)
-- Android official(http://developer.android.com/intl/zh-cn/tools/data-binding/guide.html)
-- MasteringAndroidDataBinding(https://github.com/LyndonChin/MasteringAndroidDataBinding)
-- jackson-databind(https://github.com/FasterXML/jackson-databind)
+- [Android official](http://developer.android.com/intl/zh-cn/tools/data-binding/guide.html)
+- [MasteringAndroidDataBinding](https://github.com/LyndonChin/MasteringAndroidDataBinding)
+- [jackson-databind](https://github.com/FasterXML/jackson-databind)
 
 ### 事件、响应式编程
-- RxJava(https://github.com/ReactiveX/RxJava)
-- RxAndroid(https://github.com/ReactiveX/RxAndroid)
-- RxSensor(https://github.com/wandup/RxSensor)
-- RxCamera(https://github.com/ragnraok/RxCamera)
-- RxAndroidBle(https://github.com/Polidea/RxAndroidBle)
-- RxJavaSamples(https://github.com/rengwuxian/RxJavaSamples)
-- RxBinding(https://github.com/JakeWharton/RxBinding)
-- reark(https://github.com/reark/reark)
-- RxLifecycle(https://github.com/trello/RxLifecycle)
-- Android-ReactiveLocation(https://github.com/mcharmas/Android-ReactiveLocation)
-- RxPermissions(https://github.com/tbruyelle/RxPermissions)
-- EventBus（https://github.com/greenrobot/EventBus）
-- otto(https://github.com/square/otto)
+- [RxJava](https://github.com/ReactiveX/RxJava)
+- [RxAndroid](https://github.com/ReactiveX/RxAndroid)
+- [RxSensor](https://github.com/wandup/RxSensor)
+- [RxCamera](https://github.com/ragnraok/RxCamera)
+- [RxAndroidBle](https://github.com/Polidea/RxAndroidBle)
+- [RxJavaSamples](https://github.com/rengwuxian/RxJavaSamples)
+- [RxBinding](https://github.com/JakeWharton/RxBinding)
+- [reark](https://github.com/reark/reark)
+- [RxLifecycle](https://github.com/trello/RxLifecycle)
+- [Android-ReactiveLocation](https://github.com/mcharmas/Android-ReactiveLocation)
+- [RxPermissions](https://github.com/tbruyelle/RxPermissions)
+- [EventBus](https://github.com/greenrobot/EventBus)
+- [otto](https://github.com/square/otto)
 - 相关讨论
-  - https://www.zhihu.com/question/32179258
-  - https://github.com/bboyfeiyu/android-tech-frontier/blob/master/issue-16/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8EventBus.md
-  - http://nerds.weddingpartyapp.com/tech/2014/12/24/implementing-an-event-bus-with-rxjava-rxbus/
-  - https://github.com/lzyzsd/Awesome-RxJava
+  - <https://www.zhihu.com/question/32179258>
+  - <https://github.com/bboyfeiyu/android-tech-frontier/blob/master/issue-16/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8EventBus.md>
+  - <http://nerds.weddingpartyapp.com/tech/2014/12/24/implementing-an-event-bus-with-rxjava-rxbus/>
+  - <https://github.com/lzyzsd/Awesome-RxJava>
 
 ### 测试框架
 - android-testing(https://github.com/googlesamples/android-testing)
