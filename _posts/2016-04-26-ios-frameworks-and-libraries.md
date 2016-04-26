@@ -203,6 +203,7 @@ Security.framework (2.0)
 
 是不是清晰多了，nice!  如果你喜欢最新，请关注[What's New in iOS](https://developer.apple.com/library/ios/releasenotes/General/WhatsNewIniOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008244-SW1)。
 
+接下来，我们大致了解一下private frameworks 有哪些。
 {% highlight shell %}
 $ cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/PrivateFrameworks
 $ ls -1
