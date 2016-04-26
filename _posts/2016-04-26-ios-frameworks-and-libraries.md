@@ -201,7 +201,7 @@ Security.framework (2.0)
 
 是不是清晰多了，nice!  如果你喜欢最新，请关注[What's New in iOS](https://developer.apple.com/library/ios/releasenotes/General/WhatsNewIniOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008244-SW1)。
 
-iOS内部使用的私有的库(private frameworks) 有哪些呢？
+另外，可以通过如下路径查看iOS的Private Frameworks：
 {% highlight shell %}
 $ cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/PrivateFrameworks
 $ ls -1
@@ -210,5 +210,7 @@ $ ls -1
 查看C/C++系统库和接口，可以执行如下面命令：
 {% highlight shell %}
 $ cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/usr/include
+$ ls -1
 $ cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/usr/lib
+$ ls -1
 {% endhighlight %}
