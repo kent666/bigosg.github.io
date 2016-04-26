@@ -210,7 +210,7 @@ $ ls -1
 
 输出如下：
 
-{% highlight %}
+{% highlight shell %}
 ABLE.framework
 ABLEModel.framework
 ACTFramework.framework
