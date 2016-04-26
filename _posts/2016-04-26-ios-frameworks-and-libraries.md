@@ -210,482 +210,482 @@ $ ls -1
 
 输出如下：
 
-{% highlight%}
-- ABLE.framework
-- ABLEModel.framework
-- ACTFramework.framework
-- AGXCompilerConnection.framework
-- AGXCompilerCore.framework
-- AITTarget.framework
-- AOSKit.framework
-- AOSNotification.framework
-- APTransport.framework
-- ATFoundation.framework
-- AXRuntime.framework
-- Accessibility.framework
-- AccessibilityUtilities.framework
-- AccountNotification.framework
-- AccountSettings.framework
-- AccountsDaemon.framework
-- AccountsUI.framework
-- AggregateDictionary.framework
-- AggregateDictionaryHistory.framework
-- AirPlayForCarDisplaySim.framework
-- AirPlayReceiver.framework
-- AirPlaySender.framework
-- AirPlaySupport.framework
-- AirPortAssistant.framework
-- AirTraffic.framework
-- AirTrafficDevice.framework
-- AnnotationKit.framework
-- AppConduit.framework
-- AppLaunchStats.framework
-- AppStoreUI.framework
-- AppSupport.framework
-- AppleAccount.framework
-- AppleAccountUI.framework
-- AppleBasebandManager.framework
-- AppleBasebandServices.framework
-- AppleFSCompression.framework
-- AppleIDAuthSupport.framework
-- AppleIDSSOAuthentication.framework
-- AppleJPEG.framework
-- AppleLDAP.framework
-- ApplePDPHelper.framework
-- ApplePushService.framework
-- AppleSRP.framework
-- AppleSauce.framework
-- AppleSerialMultiplexer.framework
-- AppleVXD375Framework.framework
-- AppleVXD390Framework.framework
-- AskPermission.framework
-- AssertionServices.framework
-- AssetCacheServices.framework
-- AssetsLibraryServices.framework
-- AssistantServices.framework
-- AuthKit.framework
-- AuthKitUI.framework
-- BTLEAudioController.framework
-- BackBoardServices.framework
-- BackgroundTaskAgent.framework
-- BaseBoard.framework
-- BaseBoardUI.framework
-- BatteryCenter.framework
-- BiometricKit.framework
-- BiometricKitUI.framework
-- BluetoothManager.framework
-- Bom.framework
-- BookmarkDAV.framework
-- BridgePreferences.framework
-- BulletinBoard.framework
-- BulletinDistributorCompanion.framework
-- CPMLBestShim.framework
-- CacheDelete.framework
-- CalDAV.framework
-- Calculate.framework
-- CalendarDaemon.framework
-- CalendarDatabase.framework
-- CalendarFoundation.framework
-- CalendarUIKit.framework
-- CallHistory.framework
-- CameraKit.framework
-- CameraUI.framework
-- CaptiveNetwork.framework
-- CarKit.framework
-- Celestial.framework
-- CellularPlanManager.framework
-- CertInfo.framework
-- CertUI.framework
-- CharlieKit.framework
-- ChatKit.framework
-- ChunkingLibrary.framework
-- CloudDocs.framework
-- CloudDocsDaemon.framework
-- CloudKitDaemon.framework
-- CloudPhotoLibrary.framework
-- CloudServices.framework
-- ColorSync.framework
-- CommonAuth.framework
-- CommonUtilities.framework
-- CommunicationsFilter.framework
-- CommunicationsSetupUI.framework
-- CompanionCamera.framework
-- CompanionFindMy.framework
-- CompanionSync.framework
-- CompassUI.framework
-- Conference.framework
-- ConstantClasses.framework
-- ContactsAutocomplete.framework
-- ContactsFoundation.framework
-- ContentIndex.framework
-- CoreAUC.framework
-- CoreActivity.framework
-- CoreBrightness.framework
-- CoreCDP.framework
-- CoreCDPInternal.framework
-- CoreCDPUI.framework
-- CoreCapture.framework
-- CoreCaptureControl.framework
-- CoreCaptureDaemon.framework
-- CoreDAV.framework
-- CoreDuet.framework
-- CoreDuetDaemonProtocol.framework
-- CoreDuetDataModel.framework
-- CoreDuetDebugLogging.framework
-- CoreDuetStatistics.framework
-- CoreFollowUp.framework
-- CoreFollowUpUI.framework
-- CoreHAP.framework
-- CoreHandwriting.framework
-- CoreMediaStream.framework
-- CoreMotionCommon.framework
-- CoreNLP.framework
-- CoreOptimization.framework
-- CorePDF.framework
-- CorePrediction.framework
-- CoreRC.framework
-- CoreRecents.framework
-- CoreRecognition.framework
-- CoreRoutine.framework
-- CoreSDB.framework
-- CoreServicesInternal.framework
-- CoreSuggestions.framework
-- CoreSuggestionsInternals.framework
-- CoreSymbolication.framework
-- CoreTelephonyBypass.framework
-- CoreThemeDefinition.framework
-- CoreTime.framework
-- CoreUI.framework
-- CoreUtils.framework
-- CrashReporterSupport.framework
-- Crucible.framework
-- CryptoTokenKit.framework
-- DAAPKit.framework
-- DCIMServices.framework
-- DataAccess.framework
-- DataAccessExpress.framework
-- DataAccessUI.framework
-- DataDetectorsCore.framework
-- DataDetectorsNaturalLanguage.framework
-- DataDetectorsUI.framework
-- DataMigration.framework
-- DeviceOMatic.framework
-- DeviceToDeviceManager.framework
-- DiagnosticExtensions.framework
-- DiagnosticLogCollection.framework
-- DictionaryServices.framework
-- DiskSpaceDiagnostics.framework
-- Duet.framework
-- DuetExpertCenter.framework
-- DuetPLLConfigLogger.framework
-- DuetRecommendation.framework
-- EAFirmwareUpdater.framework
-- EAP8021X.framework
-- ETPeople.framework
-- EasyConfig.framework
-- EmbeddedAcousticRecognition.framework
-- FMCore.framework
-- FMCoreLite.framework
-- FMCoreUI.framework
-- FMF.framework
-- FMFUI.framework
-- FTAWD.framework
-- FTClientServices.framework
-- FTServices.framework
-- FaceCore.framework
-- FamilyCircle.framework
-- FamilyNotification.framework
-- FileProvider.framework
-- FindMyDevice.framework
-- FindMyDeviceUI.framework
-- FitnessUI.framework
-- FlightRecorder.framework
-- FlightUtilities.framework
-- FontServices.framework
-- FoundationODR.framework
-- FrontBoard.framework
-- FrontBoardServices.framework
-- FuseUI.framework
-- Futhark.framework
-- GPUCompiler.framework
-- GPUSupport.framework
-- GameCenter.framework
-- GameCenterFoundation.framework
-- GameCenterPrivateUI.framework
-- GameCenterUI.framework
-- GameKitServices.framework
-- GenerationalStorage.framework
-- GeoServices.framework
-- GraphicsServices.framework
-- H6ISPServices.framework
-- HSAAuthentication.framework
-- HangTracer.framework
-- HealthDaemon.framework
-- HealthKitExtensions.framework
-- HealthKitUI.framework
-- Heimdal.framework
-- HelpKit.framework
-- HomeKitDaemon.framework
-- HomeSharing.framework
-- IAP.framework
-- IAPAuthentication.framework
-- IDS.framework
-- IDSFoundation.framework
-- IMAVCore.framework
-- IMCore.framework
-- IMDMessageServices.framework
-- IMDPersistence.framework
-- IMDaemonCore.framework
-- IMFoundation.framework
-- IMTranscoding.framework
-- IMTransferServices.framework
-- IOAccelMemoryInfo.framework
-- IOAccelerator.framework
-- IOMobileFramebuffer.framework
-- IOSurface.framework
-- IOSurfaceAccelerator.framework
-- IPTelephony.framework
-- ITMLKit.framework
-- ImageCapture.framework
-- IncomingCallFilter.framework
-- InternalPreferences.framework
-- InternationalTextSearch.framework
-- IntlPreferences.framework
-- JavaScriptCore.framework
-- Jet.framework
-- KeyboardArbiter.framework
-- LanguageModeling.framework
-- LatentSemanticMapping.framework
-- LegacyGameKit.framework
-- MIME.framework
-- MMCS.framework
-- MMCSServices.framework
-- MPUFoundation.framework
-- MTLCompiler.framework
-- MailServices.framework
-- ManagedConfiguration.framework
-- MapsSupport.framework
-- Marco.framework
-- MarkupUI.framework
-- MediaControlSender.framework
-- MediaLibrary.framework
-- MediaLibraryCore.framework
-- MediaPlatform.framework
-- MediaPlayerUI.framework
-- MediaRemote.framework
-- MediaServices.framework
-- MediaSocial.framework
-- MediaStream.framework
-- Message.framework
-- MessageProtection.framework
-- MessageSupport.framework
-- MetalTools.framework
-- MobileAccessoryUpdater.framework
-- MobileActivation.framework
-- MobileAsset.framework
-- MobileAssetUpdater.framework
-- MobileBackup.framework
-- MobileBluetooth.framework
-- MobileContainerManager.framework
-- MobileDelete.framework
-- MobileDeviceLink.framework
-- MobileIcons.framework
-- MobileInstallation.framework
-- MobileKeyBag.framework
-- MobileLookup.framework
-- MobileObliteration.framework
-- MobileSoftwareUpdate.framework
-- MobileSpotlightIndex.framework
-- MobileStorage.framework
-- MobileSync.framework
-- MobileSystemServices.framework
-- MobileTimer.framework
-- MobileWiFi.framework
-- MultitouchSupport.framework
-- MusicCarDisplayUI.framework
-- MusicLibrary.framework
-- MusicStoreUI.framework
-- NCLaunchStats.framework
-- NanoAppRegistry.framework
-- NanoAudioControl.framework
-- NanoBackup.framework
-- NanoComplicationSettings.framework
-- NanoGlanceSettings.framework
-- NanoLeash.framework
-- NanoMailKitServer.framework
-- NanoMediaRemote.framework
-- NanoMusicSync.framework
-- NanoPassKit.framework
-- NanoPhonePerfTesting.framework
-- NanoPreferencesSync.framework
-- NanoRegistry.framework
-- NanoResourceGrabber.framework
-- NanoSetupUISupport.framework
-- NanoSystemSettings.framework
-- NanoTimeKitCompanion.framework
-- NetAppsUtilitiesUI.framework
-- Netrb.framework
-- Network.framework
-- NetworkStatistics.framework
-- Notes.framework
-- NotesShared.framework
-- NotificationsUI.framework
-- OAuth.framework
-- OfficeImport.framework
-- OpenCL.framework
-- PBBridgeSupport.framework
-- PacketFilter.framework
-- PairedSync.framework
-- PairedUnlock.framework
-- Parsec.framework
-- ParsecSubscriptionServiceSupport.framework
-- PassKitCore.framework
-- Pegasus.framework
-- PerformanceAnalysis.framework
-- PersistentConnection.framework
-- PhotoBoothEffects.framework
-- PhotoEditSupport.framework
-- PhotoLibrary.framework
-- PhotoLibraryServices.framework
-- PhotosFormats.framework
-- PhotosPlayer.framework
-- PhysicsKit.framework
-- PlugInKit.framework
-- PowerLog.framework
-- PowerlogAccounting.framework
-- PowerlogControl.framework
-- PowerlogCore.framework
-- PowerlogDatabaseReader.framework
-- PowerlogFullOperators.framework
-- PowerlogHelperdOperators.framework
-- PowerlogLiteOperators.framework
-- Preferences.framework
-- PreferencesUI.framework
-- PrintKit.framework
-- ProgressUI.framework
-- ProofReader.framework
-- ProtectedCloudStorage.framework
-- ProtocolBuffer.framework
-- ProxiedCrashCopierClient.framework
-- Quagga.framework
-- QuickLookThumbnailing.framework
-- RTCReporting.framework
-- RadioUI.framework
-- RemindersUI.framework
-- RemoteMediaServices.framework
-- RemoteUI.framework
-- ResponseKit.framework
-- SAObjects.framework
-- SDAPI.framework
-- SafariSafeBrowsing.framework
-- SafariShared.framework
-- ScreenReaderBrailleDriver.framework
-- ScreenReaderCore.framework
-- ScreenReaderOutput.framework
-- ScreenReaderOutputServer.framework
-- Search.framework
-- SearchUI.framework
-- ServerAccounts.framework
-- ServerDocsProtocol.framework
-- ServiceManagement.framework
-- SetupAssistant.framework
-- SetupAssistantUI.framework
-- SharedWebCredentials.framework
-- Sharing.framework
-- SiriTasks.framework
-- SiriUICore.framework
-- SlideshowKit.framework
-- SoftwareBehaviorServices.framework
-- SoftwareUpdateBridge.framework
-- SoftwareUpdateServices.framework
-- Speech.framework
-- SplashBoard.framework
-- Spotlight.framework
-- SpotlightDaemon.framework
-- SpotlightReceiver.framework
-- SpotlightUI.framework
-- SpringBoardFoundation.framework
-- SpringBoardServices.framework
-- SpringBoardUI.framework
-- SpringBoardUIServices.framework
-- Stocks.framework
-- StoreBookkeeper.framework
-- StoreBookkeeperClient.framework
-- StoreKitUI.framework
-- StoreServices.framework
-- StoreServicesCore.framework
-- StreamingZip.framework
-- Symbolication.framework
-- Symptoms.framework
-- SyncedDefaults.framework
-- TCC.framework
-- TSReading.framework
-- TSUtility.framework
-- TelephonyRPC.framework
-- TelephonyUI.framework
-- TelephonyUtilities.framework
-- TelephonyXPCClient.framework
-- TelephonyXPCServer.framework
-- TextInput.framework
-- TextToSpeech.framework
-- ThermalMonitorExporter.framework
-- Tips.framework
-- ToneKit.framework
-- ToneLibrary.framework
-- TouchRemote.framework
-- UIAccessibility.framework
-- UIFoundation.framework
-- UITriggerVC.framework
-- UserActivity.framework
-- UserFS.framework
-- UserNotification.framework
-- UserNotificationServices.framework
-- VPNUtilities.framework
-- VUSocialUpload.framework
-- VectorKit.framework
-- VideoProcessing.framework
-- VideoUpload.framework
-- VisualAlert.framework
-- VisualVoicemail.framework
-- VoiceMemos.framework
-- VoiceServices.framework
-- VoiceTrigger.framework
-- VoiceTriggerUI.framework
-- VoicemailStore.framework
-- Weather.framework
-- WeatherUI.framework
-- WebApp.framework
-- WebBookmarks.framework
-- WebContentAnalysis.framework
-- WebCore.framework
-- WebInspector.framework
-- WebKit.framework
-- WebKitLegacy.framework
-- WebUI.framework
-- WelcomeKit.framework
-- WelcomeKitCore.framework
-- WelcomeKitUI.framework
-- WiFiCloudSyncEngine.framework
-- WiFiLogCapture.framework
-- WirelessCoexManager.framework
-- WirelessDiagnostics.framework
-- WirelessProximity.framework
-- XPCKit.framework
-- XPCService.framework
-- YouTube.framework
-- iAdCore.framework
-- iAdDeveloper.framework
-- iAdServices.framework
-- iCalendar.framework
-- iCloudNotification.framework
-- iOSDiagnostics.framework
-- iOSDiagnosticsSupport.framework
-- iPhotoMigrationSupport.framework
-- iTunesStore.framework
-- iTunesStoreUI.framework
-- iWorkImport.framework
-- kperf.framework
-- kperfdata.framework
-- oncrpc.framework
-- vCard.framework
+{% highlight %}
+ABLE.framework
+ABLEModel.framework
+ACTFramework.framework
+AGXCompilerConnection.framework
+AGXCompilerCore.framework
+AITTarget.framework
+AOSKit.framework
+AOSNotification.framework
+APTransport.framework
+ATFoundation.framework
+AXRuntime.framework
+Accessibility.framework
+AccessibilityUtilities.framework
+AccountNotification.framework
+AccountSettings.framework
+AccountsDaemon.framework
+AccountsUI.framework
+AggregateDictionary.framework
+AggregateDictionaryHistory.framework
+AirPlayForCarDisplaySim.framework
+AirPlayReceiver.framework
+AirPlaySender.framework
+AirPlaySupport.framework
+AirPortAssistant.framework
+AirTraffic.framework
+AirTrafficDevice.framework
+AnnotationKit.framework
+AppConduit.framework
+AppLaunchStats.framework
+AppStoreUI.framework
+AppSupport.framework
+AppleAccount.framework
+AppleAccountUI.framework
+AppleBasebandManager.framework
+AppleBasebandServices.framework
+AppleFSCompression.framework
+AppleIDAuthSupport.framework
+AppleIDSSOAuthentication.framework
+AppleJPEG.framework
+AppleLDAP.framework
+ApplePDPHelper.framework
+ApplePushService.framework
+AppleSRP.framework
+AppleSauce.framework
+AppleSerialMultiplexer.framework
+AppleVXD375Framework.framework
+AppleVXD390Framework.framework
+AskPermission.framework
+AssertionServices.framework
+AssetCacheServices.framework
+AssetsLibraryServices.framework
+AssistantServices.framework
+AuthKit.framework
+AuthKitUI.framework
+BTLEAudioController.framework
+BackBoardServices.framework
+BackgroundTaskAgent.framework
+BaseBoard.framework
+BaseBoardUI.framework
+BatteryCenter.framework
+BiometricKit.framework
+BiometricKitUI.framework
+BluetoothManager.framework
+Bom.framework
+BookmarkDAV.framework
+BridgePreferences.framework
+BulletinBoard.framework
+BulletinDistributorCompanion.framework
+CPMLBestShim.framework
+CacheDelete.framework
+CalDAV.framework
+Calculate.framework
+CalendarDaemon.framework
+CalendarDatabase.framework
+CalendarFoundation.framework
+CalendarUIKit.framework
+CallHistory.framework
+CameraKit.framework
+CameraUI.framework
+CaptiveNetwork.framework
+CarKit.framework
+Celestial.framework
+CellularPlanManager.framework
+CertInfo.framework
+CertUI.framework
+CharlieKit.framework
+ChatKit.framework
+ChunkingLibrary.framework
+CloudDocs.framework
+CloudDocsDaemon.framework
+CloudKitDaemon.framework
+CloudPhotoLibrary.framework
+CloudServices.framework
+ColorSync.framework
+CommonAuth.framework
+CommonUtilities.framework
+CommunicationsFilter.framework
+CommunicationsSetupUI.framework
+CompanionCamera.framework
+CompanionFindMy.framework
+CompanionSync.framework
+CompassUI.framework
+Conference.framework
+ConstantClasses.framework
+ContactsAutocomplete.framework
+ContactsFoundation.framework
+ContentIndex.framework
+CoreAUC.framework
+CoreActivity.framework
+CoreBrightness.framework
+CoreCDP.framework
+CoreCDPInternal.framework
+CoreCDPUI.framework
+CoreCapture.framework
+CoreCaptureControl.framework
+CoreCaptureDaemon.framework
+CoreDAV.framework
+CoreDuet.framework
+CoreDuetDaemonProtocol.framework
+CoreDuetDataModel.framework
+CoreDuetDebugLogging.framework
+CoreDuetStatistics.framework
+CoreFollowUp.framework
+CoreFollowUpUI.framework
+CoreHAP.framework
+CoreHandwriting.framework
+CoreMediaStream.framework
+CoreMotionCommon.framework
+CoreNLP.framework
+CoreOptimization.framework
+CorePDF.framework
+CorePrediction.framework
+CoreRC.framework
+CoreRecents.framework
+CoreRecognition.framework
+CoreRoutine.framework
+CoreSDB.framework
+CoreServicesInternal.framework
+CoreSuggestions.framework
+CoreSuggestionsInternals.framework
+CoreSymbolication.framework
+CoreTelephonyBypass.framework
+CoreThemeDefinition.framework
+CoreTime.framework
+CoreUI.framework
+CoreUtils.framework
+CrashReporterSupport.framework
+Crucible.framework
+CryptoTokenKit.framework
+DAAPKit.framework
+DCIMServices.framework
+DataAccess.framework
+DataAccessExpress.framework
+DataAccessUI.framework
+DataDetectorsCore.framework
+DataDetectorsNaturalLanguage.framework
+DataDetectorsUI.framework
+DataMigration.framework
+DeviceOMatic.framework
+DeviceToDeviceManager.framework
+DiagnosticExtensions.framework
+DiagnosticLogCollection.framework
+DictionaryServices.framework
+DiskSpaceDiagnostics.framework
+Duet.framework
+DuetExpertCenter.framework
+DuetPLLConfigLogger.framework
+DuetRecommendation.framework
+EAFirmwareUpdater.framework
+EAP8021X.framework
+ETPeople.framework
+EasyConfig.framework
+EmbeddedAcousticRecognition.framework
+FMCore.framework
+FMCoreLite.framework
+FMCoreUI.framework
+FMF.framework
+FMFUI.framework
+FTAWD.framework
+FTClientServices.framework
+FTServices.framework
+FaceCore.framework
+FamilyCircle.framework
+FamilyNotification.framework
+FileProvider.framework
+FindMyDevice.framework
+FindMyDeviceUI.framework
+FitnessUI.framework
+FlightRecorder.framework
+FlightUtilities.framework
+FontServices.framework
+FoundationODR.framework
+FrontBoard.framework
+FrontBoardServices.framework
+FuseUI.framework
+Futhark.framework
+GPUCompiler.framework
+GPUSupport.framework
+GameCenter.framework
+GameCenterFoundation.framework
+GameCenterPrivateUI.framework
+GameCenterUI.framework
+GameKitServices.framework
+GenerationalStorage.framework
+GeoServices.framework
+GraphicsServices.framework
+H6ISPServices.framework
+HSAAuthentication.framework
+HangTracer.framework
+HealthDaemon.framework
+HealthKitExtensions.framework
+HealthKitUI.framework
+Heimdal.framework
+HelpKit.framework
+HomeKitDaemon.framework
+HomeSharing.framework
+IAP.framework
+IAPAuthentication.framework
+IDS.framework
+IDSFoundation.framework
+IMAVCore.framework
+IMCore.framework
+IMDMessageServices.framework
+IMDPersistence.framework
+IMDaemonCore.framework
+IMFoundation.framework
+IMTranscoding.framework
+IMTransferServices.framework
+IOAccelMemoryInfo.framework
+IOAccelerator.framework
+IOMobileFramebuffer.framework
+IOSurface.framework
+IOSurfaceAccelerator.framework
+IPTelephony.framework
+ITMLKit.framework
+ImageCapture.framework
+IncomingCallFilter.framework
+InternalPreferences.framework
+InternationalTextSearch.framework
+IntlPreferences.framework
+JavaScriptCore.framework
+Jet.framework
+KeyboardArbiter.framework
+LanguageModeling.framework
+LatentSemanticMapping.framework
+LegacyGameKit.framework
+MIME.framework
+MMCS.framework
+MMCSServices.framework
+MPUFoundation.framework
+MTLCompiler.framework
+MailServices.framework
+ManagedConfiguration.framework
+MapsSupport.framework
+Marco.framework
+MarkupUI.framework
+MediaControlSender.framework
+MediaLibrary.framework
+MediaLibraryCore.framework
+MediaPlatform.framework
+MediaPlayerUI.framework
+MediaRemote.framework
+MediaServices.framework
+MediaSocial.framework
+MediaStream.framework
+Message.framework
+MessageProtection.framework
+MessageSupport.framework
+MetalTools.framework
+MobileAccessoryUpdater.framework
+MobileActivation.framework
+MobileAsset.framework
+MobileAssetUpdater.framework
+MobileBackup.framework
+MobileBluetooth.framework
+MobileContainerManager.framework
+MobileDelete.framework
+MobileDeviceLink.framework
+MobileIcons.framework
+MobileInstallation.framework
+MobileKeyBag.framework
+MobileLookup.framework
+MobileObliteration.framework
+MobileSoftwareUpdate.framework
+MobileSpotlightIndex.framework
+MobileStorage.framework
+MobileSync.framework
+MobileSystemServices.framework
+MobileTimer.framework
+MobileWiFi.framework
+MultitouchSupport.framework
+MusicCarDisplayUI.framework
+MusicLibrary.framework
+MusicStoreUI.framework
+NCLaunchStats.framework
+NanoAppRegistry.framework
+NanoAudioControl.framework
+NanoBackup.framework
+NanoComplicationSettings.framework
+NanoGlanceSettings.framework
+NanoLeash.framework
+NanoMailKitServer.framework
+NanoMediaRemote.framework
+NanoMusicSync.framework
+NanoPassKit.framework
+NanoPhonePerfTesting.framework
+NanoPreferencesSync.framework
+NanoRegistry.framework
+NanoResourceGrabber.framework
+NanoSetupUISupport.framework
+NanoSystemSettings.framework
+NanoTimeKitCompanion.framework
+NetAppsUtilitiesUI.framework
+Netrb.framework
+Network.framework
+NetworkStatistics.framework
+Notes.framework
+NotesShared.framework
+NotificationsUI.framework
+OAuth.framework
+OfficeImport.framework
+OpenCL.framework
+PBBridgeSupport.framework
+PacketFilter.framework
+PairedSync.framework
+PairedUnlock.framework
+Parsec.framework
+ParsecSubscriptionServiceSupport.framework
+PassKitCore.framework
+Pegasus.framework
+PerformanceAnalysis.framework
+PersistentConnection.framework
+PhotoBoothEffects.framework
+PhotoEditSupport.framework
+PhotoLibrary.framework
+PhotoLibraryServices.framework
+PhotosFormats.framework
+PhotosPlayer.framework
+PhysicsKit.framework
+PlugInKit.framework
+PowerLog.framework
+PowerlogAccounting.framework
+PowerlogControl.framework
+PowerlogCore.framework
+PowerlogDatabaseReader.framework
+PowerlogFullOperators.framework
+PowerlogHelperdOperators.framework
+PowerlogLiteOperators.framework
+Preferences.framework
+PreferencesUI.framework
+PrintKit.framework
+ProgressUI.framework
+ProofReader.framework
+ProtectedCloudStorage.framework
+ProtocolBuffer.framework
+ProxiedCrashCopierClient.framework
+Quagga.framework
+QuickLookThumbnailing.framework
+RTCReporting.framework
+RadioUI.framework
+RemindersUI.framework
+RemoteMediaServices.framework
+RemoteUI.framework
+ResponseKit.framework
+SAObjects.framework
+SDAPI.framework
+SafariSafeBrowsing.framework
+SafariShared.framework
+ScreenReaderBrailleDriver.framework
+ScreenReaderCore.framework
+ScreenReaderOutput.framework
+ScreenReaderOutputServer.framework
+Search.framework
+SearchUI.framework
+ServerAccounts.framework
+ServerDocsProtocol.framework
+ServiceManagement.framework
+SetupAssistant.framework
+SetupAssistantUI.framework
+SharedWebCredentials.framework
+Sharing.framework
+SiriTasks.framework
+SiriUICore.framework
+SlideshowKit.framework
+SoftwareBehaviorServices.framework
+SoftwareUpdateBridge.framework
+SoftwareUpdateServices.framework
+Speech.framework
+SplashBoard.framework
+Spotlight.framework
+SpotlightDaemon.framework
+SpotlightReceiver.framework
+SpotlightUI.framework
+SpringBoardFoundation.framework
+SpringBoardServices.framework
+SpringBoardUI.framework
+SpringBoardUIServices.framework
+Stocks.framework
+StoreBookkeeper.framework
+StoreBookkeeperClient.framework
+StoreKitUI.framework
+StoreServices.framework
+StoreServicesCore.framework
+StreamingZip.framework
+Symbolication.framework
+Symptoms.framework
+SyncedDefaults.framework
+TCC.framework
+TSReading.framework
+TSUtility.framework
+TelephonyRPC.framework
+TelephonyUI.framework
+TelephonyUtilities.framework
+TelephonyXPCClient.framework
+TelephonyXPCServer.framework
+TextInput.framework
+TextToSpeech.framework
+ThermalMonitorExporter.framework
+Tips.framework
+ToneKit.framework
+ToneLibrary.framework
+TouchRemote.framework
+UIAccessibility.framework
+UIFoundation.framework
+UITriggerVC.framework
+UserActivity.framework
+UserFS.framework
+UserNotification.framework
+UserNotificationServices.framework
+VPNUtilities.framework
+VUSocialUpload.framework
+VectorKit.framework
+VideoProcessing.framework
+VideoUpload.framework
+VisualAlert.framework
+VisualVoicemail.framework
+VoiceMemos.framework
+VoiceServices.framework
+VoiceTrigger.framework
+VoiceTriggerUI.framework
+VoicemailStore.framework
+Weather.framework
+WeatherUI.framework
+WebApp.framework
+WebBookmarks.framework
+WebContentAnalysis.framework
+WebCore.framework
+WebInspector.framework
+WebKit.framework
+WebKitLegacy.framework
+WebUI.framework
+WelcomeKit.framework
+WelcomeKitCore.framework
+WelcomeKitUI.framework
+WiFiCloudSyncEngine.framework
+WiFiLogCapture.framework
+WirelessCoexManager.framework
+WirelessDiagnostics.framework
+WirelessProximity.framework
+XPCKit.framework
+XPCService.framework
+YouTube.framework
+iAdCore.framework
+iAdDeveloper.framework
+iAdServices.framework
+iCalendar.framework
+iCloudNotification.framework
+iOSDiagnostics.framework
+iOSDiagnosticsSupport.framework
+iPhotoMigrationSupport.framework
+iTunesStore.framework
+iTunesStoreUI.framework
+iWorkImport.framework
+kperf.framework
+kperfdata.framework
+oncrpc.framework
+vCard.framework
 {% endhighlight %}
