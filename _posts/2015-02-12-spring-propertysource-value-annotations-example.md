@@ -15,12 +15,12 @@ category: "spring"
 @ComponentScan(basePackages = "com.9leg.java.spring")
 @PropertySource(value = "classpath:spring/config.properties")
 public class AppConfigTest {
-    
+
     @Bean
     public PropertySourcesPlaceholderConfigurer propertyConfigInDev() {
         return new PropertySourcesPlaceholderConfigurer();
     }
-    
+
 }
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ public class AppConfig {
 如果missing.properties不存在或找不到,系统则会抛出异常**FileNotFoundException**。
 
 {% highlight java %}
-Caused by: java.io.FileNotFoundException: 
+Caused by: java.io.FileNotFoundException:
 		class path resource [missiong.properties] cannot be opened because it does not exist
 {% endhighlight %}
 
@@ -83,9 +83,9 @@ Caused by: java.io.FileNotFoundException:
         xmlns:context="http://www.springframework.org/schema/context"
         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
     http://www.springframework.org/schema/context   http://www.springframework.org/schema/context/spring-context-4.0.xsd">
- 
+
     <context:component-scan base-package="com.9leg.java.spring"/>
- 
+
     <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
         <property name="locations">
@@ -116,13 +116,13 @@ public class MockConfigTest {
 
     @Value("#{'${server.id}'.split(',')}")
     private List<Integer> serverId;
-    
+
     @Value("${server.host:127.0.0.1}")
     private String noProKey;
-    
+
     @Autowired
     private Environment environment;
-    
+
     public void readValues() {
         System.out.println("Services Size : " + servers.size());
         for(String s : servers)
@@ -165,5 +165,3 @@ Server Jdbc : com.mysql.jdbc.Driver
 {% endhighlight %}
 
 最后要说一点，在main方法中请使用**new AnnotationConfigApplicationContext(AppConfigTest.class)**来代替**new ClassPathXmlApplicationContext("applicationContext.xml")**或者**new FileSystemXmlApplicationContext("src/main/resources/applicationContext.xml")**。
-
-原创文章转载请注明出处: [Spring的@PropertySource和@Value注解例子](http://9leg.com/spring/2015/02/12/spring-propertysource-value-annotations-example.html)

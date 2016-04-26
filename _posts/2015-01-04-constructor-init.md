@@ -56,7 +56,7 @@ public class StaticInitialization {
   }
   static Table table = new Table();
   static Cupboard cupboard = new Cupboard();
-} 
+}
 {% endhighlight %}
 
 Output:
@@ -96,5 +96,3 @@ f3(1)
 ### 枚举初始化
 在创建enum时，编译器会自动添加一些有用的特性。例如，它会创建toString()方法，以便可以很方便地显示某个enum实例。编译器还会创建ordinal()方法，用来表示某个特定enum常量的声明顺序，以及static values()方法，用来按照enum常量的声明顺序，产生由这些常量值构成的数组。
 enum关键字只是为生成对应的类时，产生了某些编译器行为，因此很大程度上，可以将enum当作其他任何类处理。
-
-原创文章转载请注明出处：[Java构造器和枚举的初始化](http://www.9leg.com/java/2015/01/04/constructor-init.html)

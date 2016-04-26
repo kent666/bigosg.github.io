@@ -47,5 +47,3 @@ public class B {
 由于final类禁止继承，所以final类中所有的方法都是隐式指定为是final的，因为无法覆盖它们。
 
 参考ThinkInJava
-
-原创文章转载请注明出处：[Java的final关键字](http://www.9leg.com/java/2015/01/07/final-keyword.html)

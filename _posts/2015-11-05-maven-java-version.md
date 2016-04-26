@@ -60,5 +60,3 @@ Java HotSpot(TM) 64-Bit Server VM (build 24.72-b04, mixed mode)
 参考:
 
 [https://github.com/gcuisinier/jenv/issues/74](https://github.com/gcuisinier/jenv/issues/74){:target="_blank"}
-
-原创文章转载请注明出处：[maven的java版本随jenv切换改变而改变](http://9leg.com/maven/2015/11/05/maven-java-version .html)

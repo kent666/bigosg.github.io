@@ -19,7 +19,7 @@ class User {
     }
 }
 public class TestMain {
-    
+
     public static void main(String[] args) {
 
         List<User> users = new ArrayList<User>();
@@ -66,5 +66,3 @@ class User {
 {% endhighlight %}
 
 其实不用覆写User的toString()方法，也会打印出内存地址，默认使用的Object的toString()方法。
-
-原创文章转载请注明出处: [String中的无意识递归](http://9leg.com/java/2015/05/07/string-recursive.html)

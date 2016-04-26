@@ -22,7 +22,7 @@ category: "java"
 
 这里展示一个重载方法的示例。
 
-{% highlight java %} 
+{% highlight java %}
 public class TestMain {
   public static void main(String[] args) {
       String str = new String();
@@ -32,7 +32,7 @@ public class TestMain {
   static class Caller {
       public void call(Object obj) {
           System.out.println("an Object instance in Caller");
-      } 
+      }
       public void call(String str) {
           System.out.println("a String instance in in Caller");
       }
@@ -88,13 +88,13 @@ public class TestMain {
       Caller caller = new SubCaller();
       caller.call(str);
   }
-  
+
   static class Caller {
       public void call(String str) {
           System.out.println("a String instance in Caller");
       }
   }
-  
+
   static class SubCaller extends Caller {
       @Override
       public void call(String str) {
@@ -157,23 +157,23 @@ public class TestMain {
       Caller callerSub = new SubCaller();
       callerSub.call(str);
   }
-  
+
   static class Caller {
       public void call(Object obj) {
           System.out.println("an Object instance in Caller");
       }
-      
+
       public void call(String str) {
           System.out.println("a String instance in in Caller");
       }
   }
-  
+
   static class SubCaller extends Caller {
       @Override
       public void call(Object obj) {
           System.out.println("an Object instance in SubCaller");
       }
-      
+
       @Override
       public void call(String str) {
           System.out.println("a String instance in in SubCaller");
@@ -242,7 +242,7 @@ static class SuperCaller {
       System.out.println("an Object instance in SuperCaller");
   }
 }
-  
+
 static class BaseCaller extends SuperCaller {
   public void call(Object obj) {
       System.out.println("an Object instance in BaseCaller");
@@ -258,24 +258,24 @@ public class TestMain {
       SuperCaller callerSub = new SubCaller();
       callerSub.call(obj);
   }
-  
+
   static class Caller extends BaseCaller{
       public void call(Object obj) {
           System.out.println("an Object instance in Caller");
           super.call(obj);
       }
-      
+
       public void call(String str) {
           System.out.println("a String instance in in Caller");
       }
   }
-  
+
   static class SubCaller extends Caller {
       @Override
       public void call(Object obj) {
           System.out.println("an Object instance in SubCaller");
       }
-      
+
       @Override
       public void call(String str) {
           System.out.println("a String instance in in SubCaller");

@@ -245,5 +245,3 @@ null
 
 Think in Java <br>
 [http://www.codedata.com.tw/java/jdk8-annotation-enhancement/](http://www.codedata.com.tw/java/jdk8-annotation-enhancement/){:target="_blank"}
-
-原创文章转载请注明出处：[Java注解全面解析](http://9leg.com/java/2016/01/21/java-annotation.html)

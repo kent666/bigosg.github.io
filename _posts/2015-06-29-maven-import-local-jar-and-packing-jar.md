@@ -130,6 +130,3 @@ Class-Path: lib/SMS_SDK_JAVA_v2.6.3r.jar lib/org.apache.oltu.oauth2.resourceserv
 
 另外如果有需要可以定制MF文件,参考[Apache Maven manifestEntries官网说明](http://maven.apache.org/shared-archives/maven-archiver-LATEST/examples/manifestEntries.html){:target="_blank"}
 和[IBM Apache Maven您不知道的5件事](http://www.ibm.com/developerworks/cn/java/j-5things13/){:target="_blank"}
-
-
-原创文章转载请注明出处: [Maven引入本地jar包并生成jar包运行](http://9leg.com/maven/2015/06/29/maven-import-local-jar-and-packing-jar.html)
