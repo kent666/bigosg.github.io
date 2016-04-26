@@ -1,12 +1,13 @@
 ---
 layout: post
-title: iOS Frameworks列表
+title: iOS公开的Frameworks列表
 date: 2016-04-26 09:37:00
 category: "iOS"
 ---
 
-iOS到底包含哪些库，公开的framework有哪些，私有的又有哪些，你能一一列举出来吗？你可能告诉我看这个[iOS Frameworks](https://developer.apple.com/library/ios/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/iPhoneOSFrameworks/iPhoneOSFrameworks.html#//apple_ref/doc/uid/TP40007898-CH6-SW3),可是好像不全。So,我们想象别的办法。
-执行如下命令（以iOS9.3为例）：
+iOS公开的frameworks有哪些，你能一一列举出来吗？你可能告诉我看这个[iOS Frameworks](https://developer.apple.com/library/ios/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/iPhoneOSFrameworks/iPhoneOSFrameworks.html#//apple_ref/doc/uid/TP40007898-CH6-SW3), 可是好像不全。So,我们想想别的办法。
+执行如下命令（以iOS9.3为例：
+
 {% highlight shell %}
 $ cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks
 $ ls -1
