@@ -161,7 +161,7 @@ category: "Android"
 - [DroidPlugin](https://github.com/DroidPluginTeam/DroidPlugin)
 - [AndFix](https://github.com/alibaba/AndFix)
 - [ACDD](https://github.com/bunnyblue/ACDD)
-- [AndroidDynamicLoader}(https://github.com/mmin18/AndroidDynamicLoader)
+- [AndroidDynamicLoader](https://github.com/mmin18/AndroidDynamicLoader)
 
 ### 逆向工程、安全
 - [Apktool](https://github.com/iBotPeaches/Apktool)
