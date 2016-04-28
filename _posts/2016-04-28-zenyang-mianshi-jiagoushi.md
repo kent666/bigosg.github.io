@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【转】怎么面试架构师
+title: 怎么面试架构师
 date: 2016-04-28 11:57:00
 category: "软件架构"
 ---
