@@ -21,7 +21,7 @@ category: "软件架构"
 
 针对第一类问题，我认为是很有必要问的，架构师对技术细节的理解，是很能够影响他做架构时的设计思路的。毕竟每一个领域都有不同，了解不同领域的差异，以及特定领域的技术细节，很影响架构时的设计思路和实现手段。然而，这并不是鼓励大家去挖出各种细节的问题，然后去考察架构师候选人，这里需要有一个度。
 
-举个例子：你如何去把一个view的所有subview清空？
+- 举个例子：你如何去把一个view的所有subview清空？
   - 如果知道NSArray有makeObjectsPerformSelector这个方法的人，他们能够说出直接使用这个方法，然后在selector里面写removeFromSuperView的selector，就好了，而且很省事，一句话就搞定。
   - 如果知道NSArray有enumerator方法的人，他们会说出使用这种方法枚举每一个subview，在block里把removeFromSuperView调用起来，也差不多两三行的事儿。
   - 不知道NSArray有上面这些方法的人，他会说用for...in...的方法遍历，然后取到这每一个subview，让他们执行removeFromSuperView。可能要花费大概四五行。
