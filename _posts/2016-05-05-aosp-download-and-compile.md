@@ -168,7 +168,6 @@ $ cd /prebuilts/sdk/tools
 {% endhighlight %}
 
 编辑**jack-diagnose**、**jack-admin**、**jack**三个文件，将
-/Volumes/android运行，找到jack工具路径，编辑**jack-diagnose**、**jack-admin**、**jack**三个文件，将
 {% highlight shell %}
 #JACK_HOME="${JACK_HOME:=$HOME/.jack-server}"
 #CLIENT_SETTING="${CLIENT_SETTING:=$HOME/.jack-settings}"
