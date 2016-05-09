@@ -59,9 +59,7 @@ $ JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 $ PATH=${JAVA_HOME}/bin:$PATH
 {% endhighlight %}
 
-再执行编译选项：
-
-报错：
+再执行编译选项，报错：
 {% highlight shell %}
 ============================================
 PLATFORM_VERSION_CODENAME=REL
@@ -154,7 +152,7 @@ $ make install
 $ sudo vim /etc/paths
 {% endhighlight %}
 
-在文件开头添加/usr/local/curl/bin,保存退出。再一次执行编译命令，发现一直卡在jack server([Jack官方介绍 ](https://source.android.com/source/jack.html#using_jack_in_your_android_build)):
+在文件开头添加/usr/local/curl/bin,保存退出。再一次执行编译命令，发现一直卡在**jack server**([Jack官方介绍 ](https://source.android.com/source/jack.html#using_jack_in_your_android_build)):
 {% highlight shell %}
 Ensure Jack server is installed and started
 Writing client settings in $HOME/jack-settings
@@ -162,7 +160,7 @@ Installing jack server in "$HOME/.jack-server"
 [  4% 628/14467] Building with Jack: out/target/common/obj/J...A_LIBRARIES/libprotobuf-java-nano_intermediates/classes.jack
 {% endhighlight %}
 
-由于我是在移动硬盘上安装，感觉是这两个进程和我的/Volumes/android卷通信存在问题，想到能不能将jack-server和jack-settings这两个进程在/Volumes/android运行，找到jack路径工具:
+由于我是在移动硬盘上安装，感觉是这两个进程和我的/Volumes/android卷通信存在问题，想到能不能将jack-server和jack-settings这两个进程在/Volumes/android运行，找到jack工具路径:
 {% highlight shell %}
 $ cd /prebuilts/sdk/tools
 {% endhighlight %}
@@ -208,7 +206,7 @@ $ make idegen && development/tools/idegen/idegen.sh
  用Android Studio打开生成的android.ipr文件阅读源码。
 
  参考：
- 
+
  - http://source.android.com/source/initializing.html
  - https://source.android.com/source/jack.html#using_jack_in_your_android_build
  - https://android.googlesource.com/toolchain/jack/+/ub-jack/server/jack-server/etc/jack
