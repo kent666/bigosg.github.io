@@ -151,7 +151,7 @@ $ make install
 
 设置curl环境变量
 {% highlight shell %}
-sudo vim /etc/paths
+$ sudo vim /etc/paths
 {% endhighlight %}
 
 在文件开头添加/usr/local/curl/bin,保存退出。再一次执行编译命令，成功。
