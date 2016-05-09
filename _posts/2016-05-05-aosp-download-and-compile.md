@@ -133,4 +133,24 @@ make: *** [out/build-aosp_arm.ninja] Error 1
 # hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 60g -volname android /Volumes/Samsung_T1/android.dmg // 移动硬盘Samsung_T1
 {% endhighlight %}
 
-生成位置 /Volumes/Samsung_T1/android.dmg.sparseimage，双击打开android卷，将AOSP目录拷贝至android卷，再一次执行编译命令，成功。
+生成位置 /Volumes/Samsung_T1/android.dmg.sparseimage，双击打开android卷，将AOSP目录拷贝至android卷，再一次执行编译命令，报错：
+
+执行如下命令：
+{% highlight shell %}
+Unsupported curl, please use a curl not based on SecureTransport
+{% endhighlight %}
+
+[解决方法](http://stackoverflow.com/questions/33318756/while-i-make-the-source-of-android-6-0-it-failed)是要用openssl重新编译一个curl。
+
+{% highlight shell %}
+./configure --prefix=/usr/local/curl --with-ssl=/usr/local/Cellar/openssl/1.0.2d_1
+make
+make install
+{% endhighlight %}
+
+设置curl环境变量
+{% highlight shell %}
+sudo vim /etc/paths
+{% endhighlight %}
+
+在文件开头添加/usr/local/curl/bin,保存退出。再一次执行编译命令，成功。
