@@ -157,4 +157,10 @@ sudo vim /etc/paths
 在文件开头添加/usr/local/curl/bin,保存退出。再一次执行编译命令，成功。
 
 ### 查看源码
-在AOSP根目录执行 make idegen && development/tools/idegen/idegen.sh，然后直接用Android Studio打开生成的android.ipr 文件就可以了。
+
+在AOSP根目录执行:
+{% highlight shell %}
+make idegen && development/tools/idegen/idegen.sh
+{% endhighlight %}
+
+ 用Android Studio打开生成的android.ipr文件阅读源码。
