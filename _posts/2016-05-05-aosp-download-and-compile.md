@@ -154,21 +154,21 @@ $ make install
 $ sudo vim /etc/paths
 {% endhighlight %}
 
-在文件开头添加/usr/local/curl/bin,保存退出。再一次执行编译命令，发现一直卡在jack server，官方介绍[Jack (Java Android Compiler Kit)](https://source.android.com/source/jack.html#using_jack_in_your_android_build)：
+在文件开头添加/usr/local/curl/bin,保存退出。再一次执行编译命令，发现一直卡在jack server([Jack官方介绍 ](https://source.android.com/source/jack.html#using_jack_in_your_android_build)):
 {% highlight shell %}
 Ensure Jack server is installed and started
-Writing client settings in ./jack-settings
-Installing jack server in "./.jack-server"
+Writing client settings in $HOME/jack-settings
+Installing jack server in "$HOME/.jack-server"
 [  4% 628/14467] Building with Jack: out/target/common/obj/J...A_LIBRARIES/libprotobuf-java-nano_intermediates/classes.jack
 {% endhighlight %}
 
-由于我是在移动硬盘上安装，感觉是这两个进程和我的/Volumes/android卷通信存在问题，想到能不能将jack-server和jack-settings这两个进程在/Volumes/android运行，找到jack路径工具，编辑jack-diagnose、jack-admin、jack三个文件
+由于我是在移动硬盘上安装，感觉是这两个进程和我的/Volumes/android卷通信存在问题，想到能不能将jack-server和jack-settings这两个进程在/Volumes/android运行，找到jack路径工具:
 {% highlight shell %}
 $ cd /prebuilts/sdk/tools
 {% endhighlight %}
 
-编辑jack-diagnose、jack-admin、jack三个文件，将
-/Volumes/android运行，找到jack路径工具，编辑jack-diagnose、jack-admin、jack三个文件，将
+编辑**jack-diagnose**、**jack-admin**、**jack**三个文件，将
+/Volumes/android运行，找到jack工具路径，编辑**jack-diagnose**、**jack-admin**、**jack**三个文件，将
 {% highlight shell %}
 #JACK_HOME="${JACK_HOME:=$HOME/.jack-server}"
 #CLIENT_SETTING="${CLIENT_SETTING:=$HOME/.jack-settings}"
