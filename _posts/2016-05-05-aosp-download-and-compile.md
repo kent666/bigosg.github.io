@@ -208,8 +208,9 @@ $ make idegen && development/tools/idegen/idegen.sh
  用Android Studio打开生成的android.ipr文件阅读源码。
 
  参考：
- - https://code.google.com/p/android/issues/detail?id=194027
  - http://source.android.com/source/initializing.html
  - https://source.android.com/source/jack.html#using_jack_in_your_android_build
+ - https://android.googlesource.com/toolchain/jack/+/ub-jack/server/jack-server/etc/jack
+ - https://code.google.com/p/android/issues/detail?id=194027
  - https://seewhy.me/2016/01/01/aospcompilation/
  - http://taobaofed.org/blog/2016/05/05/new-compiler-for-android/
