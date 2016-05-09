@@ -52,9 +52,8 @@ make -j4
 build/core/config.mk:618: *** Error: could not find jdk tools.jar at /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/../lib/tools.jar, please check if your JDK was installed correctly.  Stop.
 {% endhighlight %}
 
-原因是JDK 8版本太高，换成JDK 7:
 {% highlight shell %}
-JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 PATH=${JAVA_HOME}/bin:$PATH
 {% endhighlight %}
 
@@ -144,18 +143,4 @@ make -j4
 {% endhighlight %}
 
 报错：
-生成位置 /Volumes/Samsung_T1/android.dmg.sparseimage，双击打开android卷，将AOSP目录拷贝至android卷，执行：
-执行如下命令：
-{% highlight shell %}
-build/core/config.mk:618: *** Error: could not find jdk tools.jar at /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/../lib/tools.jar, please check if your JDK was installed correctly.  Stop.
-{% endhighlight %}
-
-执行：
-执行如下命令：
-{% highlight shell %}
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
-PATH=${JAVA_HOME}/bin:$PATH
-make -j4
-{% endhighlight %}
-
-编译成功。
+生成位置 /Volumes/Samsung_T1/android.dmg.sparseimage，双击打开android卷，将AOSP目录拷贝至android卷，再一次执行编译命令，成功。
