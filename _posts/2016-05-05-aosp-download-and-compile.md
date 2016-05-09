@@ -14,7 +14,7 @@ Android 6.0已经推出，更新了许多新的特性，而最好的学习方法
 - curl : 7.43.0
 
 ### 获取源码
-从清华[AOSP镜像](https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/)下载初始包（大小36GB）：
+从清华[AOSP镜像](https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/)下载初始包（大小24GB）：
 
 {% highlight shell %}
 wget http://mirrors.tuna.tsinghua.edu.cn/aosp-monthly/aosp-latest.tar # 下载初始化包
@@ -40,42 +40,97 @@ cd AOSP   # 解压得到的 AOSP 工程目录
 repo sync
 {% endhighlight %}
 
+### 编译源代码
+在AOSP目录下执行如下命令：
+
+{% highlight shell %}
+source build/envsetup.sh // 设置环境变量
+make -j4
+{% endhighlight %}
+
 报错：
 {% highlight shell %}
-remote: Counting objects: 88, done.        
-remote: Compressing objects: 100% (63/63), done.        
-remote: Total 88 (delta 30), reused 0 (delta 0)        
-From https://aosp.tuna.tsinghua.edu.cn/platform/manifest
- * [new branch]      android-5.1.1_r37 -> origin/android-5.1.1_r37
- * [new branch]      android-6.0.1_r20 -> origin/android-6.0.1_r20
- * [new branch]      android-6.0.1_r24 -> origin/android-6.0.1_r24
- * [new branch]      android-6.0.1_r30 -> origin/android-6.0.1_r30
- * [new branch]      android-6.0.1_r31 -> origin/android-6.0.1_r31
- * [new branch]      android-cts-5.0_r5 -> origin/android-cts-5.0_r5
- * [new branch]      android-cts-5.1_r6 -> origin/android-cts-5.1_r6
- * [new branch]      android-cts-6.0_r5 -> origin/android-cts-6.0_r5
- * [new branch]      android-n-preview-2 -> origin/android-n-preview-2
- * [new branch]      build-tools -> origin/build-tools
-   f43e64b..5a82ef6  cmake-master-dev -> origin/cmake-master-dev
- * [new branch]      gradle_2.0.0 -> origin/gradle_2.0.0
-   7a37dd8..c201a1b  llvm       -> origin/llvm
-   a305b38..9732d4b  master     -> origin/master
-   d30ae5b..0eb3521  master-ndk -> origin/master-ndk
- * [new branch]      ndk-r12-beta1 -> origin/ndk-r12-beta1
- * [new branch]      openjdk    -> origin/openjdk
- * [new branch]      studio-2.0 -> origin/studio-2.0
-   2b1ccb7..eb7124d  studio-master-dev -> origin/studio-master-dev
- * [new tag]         android-5.1.1_r37 -> android-5.1.1_r37
- * [new tag]         android-6.0.1_r20 -> android-6.0.1_r20
- * [new tag]         android-6.0.1_r24 -> android-6.0.1_r24
- * [new tag]         android-6.0.1_r30 -> android-6.0.1_r30
- * [new tag]         android-6.0.1_r31 -> android-6.0.1_r31
- * [new tag]         android-cts-5.0_r5 -> android-cts-5.0_r5
- * [new tag]         android-cts-5.1_r6 -> android-cts-5.1_r6
- * [new tag]         android-cts-6.0_r5 -> android-cts-6.0_r5
- * [new tag]         android-n-preview-2 -> android-n-preview-2
- * [new tag]         gradle_2.0.0 -> gradle_2.0.0
- * [new tag]         ndk-r12-beta1 -> ndk-r12-beta1
- * [new tag]         studio-2.0 -> studio-2.0
-error: .repo/manifests/: contains uncommitted changes
+build/core/config.mk:618: *** Error: could not find jdk tools.jar at /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/../lib/tools.jar, please check if your JDK was installed correctly.  Stop.
 {% endhighlight %}
+
+原因是JDK 8版本太高，换成JDK 7:
+{% highlight shell %}
+JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+PATH=${JAVA_HOME}/bin:$PATH
+{% endhighlight %}
+
+再执行：
+{% highlight shell %}
+make -j4
+{% endhighlight %}
+
+报错：
+{% highlight shell %}
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=6.0.1
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=darwin
+HOST_OS_EXTRA=Darwin-15.4.0-x86_64-i386-64bit
+HOST_CROSS_OS=
+HOST_CROSS_ARCH=
+HOST_CROSS_2ND_ARCH=
+HOST_BUILD_TYPE=release
+BUILD_ID=MASTER
+OUT_DIR=out
+============================================
+[1/2] choosing next stage
+Choosing primary.ninja.in for next stage
+[2/2] bootstrap out/soong/.bootstrap/build.ninja.in
+[1/2] choosing next stage
+Choosing main.ninja.in for next stage
+[2/2] bootstrap out/soong/.bootstrap/build.ninja.in
+ninja: no work to do.
+Running kati to generate build-aosp_arm.ninja...
+out/build-aosp_arm.ninja is missing, regenerating...
+2016-05-09 11:01:54.710 xcodebuild[13571:127083] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XcodeColors.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=6.0.1
+TARGET_PRODUCT=aosp_arm
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=darwin
+HOST_OS_EXTRA=Darwin-15.4.0-x86_64-i386-64bit
+HOST_CROSS_OS=
+HOST_CROSS_ARCH=
+HOST_CROSS_2ND_ARCH=
+HOST_BUILD_TYPE=release
+BUILD_ID=MASTER
+OUT_DIR=out
+============================================
+Checking build tools versions...
+build/core/main.mk:148: ************************************************************
+build/core/main.mk:149: You are building on a case-insensitive filesystem.
+build/core/main.mk:150: Please move your source tree to a case-sensitive filesystem.
+build/core/main.mk:151: ************************************************************
+build/core/main.mk:152: *** Case-insensitive filesystems not supported.
+make: *** [out/build-aosp_arm.ninja] Error 1
+{% endhighlight %}
+
+执行如下命令：
