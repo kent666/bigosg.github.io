@@ -179,7 +179,24 @@ JACK_HOME="${JACK_HOME:=/Volumes/android/.jack-server}"
 CLIENT_SETTING="${CLIENT_SETTING:=/Volumes/android/.jack-settings}"
 {% endhighlight %}
 
-重启jack-server和jack-settings，再一次执行编译命令，成功。
+重启jack-server和jack-settings，再一次执行编译命令，报错：
+{% highlight shell %}
+FAILED: /bin/bash out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/dex-dir/classes.dex.rsp
+Out of memory error (version 1.2-rc1 'Carnac' (296000 4ba365ab8a3d2c7e55c3428f919af59e687258fa by android-jack-team@google.com)).
+GC overhead limit exceeded.
+Try increasing heap size with java option '-Xmx<size>'.
+Warning: This may have produced partial or corrupted output.
+[  0% 23/13788] Building with Jack: out/target/common/obj/JA...IBRARIES/android-support-v4-donut_intermediates/classes.jack
+ninja: build stopped: subcommand failed.
+make: *** [ninja_wrapper] Error 1
+{% endhighlight %}
+
+执行：
+{% highlight shell %}
+$ java -Xmx2000M -Xms1000M -XshowSettings:all
+{% endhighlight %}
+
+再一次执行编译命令，成功。
 
 ### 查看源码
 
