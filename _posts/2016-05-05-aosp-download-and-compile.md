@@ -44,7 +44,7 @@ repo sync
 
 {% highlight shell %}
 source build/envsetup.sh // 设置环境变量
-make -j4
+make -j4 // 执行编译选项
 {% endhighlight %}
 
 报错：
@@ -57,10 +57,7 @@ JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 PATH=${JAVA_HOME}/bin:$PATH
 {% endhighlight %}
 
-再执行：
-{% highlight shell %}
-make -j4
-{% endhighlight %}
+再执行编译选项：
 
 报错：
 {% highlight shell %}
@@ -136,11 +133,4 @@ make: *** [out/build-aosp_arm.ninja] Error 1
 # hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 60g -volname android /Volumes/Samsung_T1/android.dmg // 移动硬盘Samsung_T1
 {% endhighlight %}
 
-生成位置 /Volumes/Samsung_T1/android.dmg.sparseimage，双击打开android卷，将AOSP目录拷贝至android卷，执行：
-执行如下命令：
-{% highlight shell %}
-make -j4
-{% endhighlight %}
-
-报错：
 生成位置 /Volumes/Samsung_T1/android.dmg.sparseimage，双击打开android卷，将AOSP目录拷贝至android卷，再一次执行编译命令，成功。
