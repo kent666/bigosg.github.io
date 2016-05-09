@@ -17,13 +17,13 @@ Android 6.0已经推出，更新了许多新的特性，而最好的学习方法
 从清华[AOSP镜像](https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/)下载初始包（大小24GB）：
 
 {% highlight shell %}
-wget http://mirrors.tuna.tsinghua.edu.cn/aosp-monthly/aosp-latest.tar # 下载初始化包
+$ wget http://mirrors.tuna.tsinghua.edu.cn/aosp-monthly/aosp-latest.tar # 下载初始化包
 {% endhighlight %}
 
 下载完成后，做文件MD5校验：
 
 {% highlight shell %}
-openssl md5 aosp-latest.tar
+$ openssl md5 aosp-latest.tar
 {% endhighlight %}
 
 输出结果和[checksum.txt](https://mirrors.tuna.tsinghua.edu.cn/aosp-monthly/checksum.txt)比对，结果一致。
@@ -31,21 +31,21 @@ openssl md5 aosp-latest.tar
 解压源码：
 
 {% highlight shell %}
-tar xf aosp-latest.tar
+$ tar xf aosp-latest.tar
 {% endhighlight %}
 
 同步最新源码：
 {% highlight shell %}
-cd AOSP   # 解压得到的 AOSP 工程目录
-repo sync
+$ cd AOSP   # 解压得到的 AOSP 工程目录
+$ repo sync
 {% endhighlight %}
 
 ### 编译源代码
 在AOSP目录下执行如下命令：
 
 {% highlight shell %}
-source build/envsetup.sh // 设置环境变量
-make -j4 // 执行编译选项
+$ source build/envsetup.sh // 设置环境变量
+$ make -j4 // 执行编译选项
 {% endhighlight %}
 
 报错：
@@ -53,9 +53,10 @@ make -j4 // 执行编译选项
 build/core/config.mk:618: *** Error: could not find jdk tools.jar at /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/../lib/tools.jar, please check if your JDK was installed correctly.  Stop.
 {% endhighlight %}
 
+修改Java环境变量：
 {% highlight shell %}
-JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-PATH=${JAVA_HOME}/bin:$PATH
+$ JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+$ PATH=${JAVA_HOME}/bin:$PATH
 {% endhighlight %}
 
 再执行编译选项：
@@ -129,14 +130,13 @@ build/core/main.mk:152: *** Case-insensitive filesystems not supported.
 make: *** [out/build-aosp_arm.ninja] Error 1
 {% endhighlight %}
 
-执行如下命令：
+创建一个区分大小写的android卷：
 {% highlight shell %}
-# hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 60g -volname android /Volumes/Samsung_T1/android.dmg // 移动硬盘Samsung_T1
+$ hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 60g -volname android /Volumes/Samsung_T1/android.dmg // 移动硬盘Samsung_T1
 {% endhighlight %}
 
 生成位置 /Volumes/Samsung_T1/android.dmg.sparseimage，双击打开android卷，将AOSP目录拷贝至android卷，再一次执行编译命令，报错：
 
-执行如下命令：
 {% highlight shell %}
 Unsupported curl, please use a curl not based on SecureTransport
 {% endhighlight %}
@@ -144,9 +144,9 @@ Unsupported curl, please use a curl not based on SecureTransport
 [解决方法](http://stackoverflow.com/questions/33318756/while-i-make-the-source-of-android-6-0-it-failed)是要用openssl重新编译一个curl。
 
 {% highlight shell %}
-./configure --prefix=/usr/local/curl --with-ssl=/usr/local/Cellar/openssl/1.0.2d_1
-make
-make install
+$ ./configure --prefix=/usr/local/curl --with-ssl=/usr/local/Cellar/openssl/1.0.2d_1
+$ make
+$ make install
 {% endhighlight %}
 
 设置curl环境变量
@@ -160,7 +160,7 @@ sudo vim /etc/paths
 
 在AOSP根目录执行:
 {% highlight shell %}
-make idegen && development/tools/idegen/idegen.sh
+$ make idegen && development/tools/idegen/idegen.sh
 {% endhighlight %}
 
  用Android Studio打开生成的android.ipr文件阅读源码。
