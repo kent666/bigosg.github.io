@@ -28,7 +28,12 @@ $ openssl md5 aosp-latest.tar
 
 输出结果和[checksum.txt](https://mirrors.tuna.tsinghua.edu.cn/aosp-monthly/checksum.txt)比对，结果一致。
 
-解压源码：
+创建一个区分大小写的android卷：
+{% highlight shell %}
+$ hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 60g -volname android /Volumes/Samsung_T1/android.dmg // 移动硬盘Samsung_T1
+{% endhighlight %}
+
+生成位置 /Volumes/Samsung_T1/android.dmg.sparseimage。双击打开android卷，将源码拷贝到android卷中，解压源码：
 
 {% highlight shell %}
 $ tar xf aosp-latest.tar
@@ -60,80 +65,6 @@ $ PATH=${JAVA_HOME}/bin:$PATH
 {% endhighlight %}
 
 再执行编译选项，报错：
-{% highlight shell %}
-============================================
-PLATFORM_VERSION_CODENAME=REL
-PLATFORM_VERSION=6.0.1
-TARGET_PRODUCT=aosp_arm
-TARGET_BUILD_VARIANT=eng
-TARGET_BUILD_TYPE=release
-TARGET_BUILD_APPS=
-TARGET_ARCH=arm
-TARGET_ARCH_VARIANT=armv7-a
-TARGET_CPU_VARIANT=generic
-TARGET_2ND_ARCH=
-TARGET_2ND_ARCH_VARIANT=
-TARGET_2ND_CPU_VARIANT=
-HOST_ARCH=x86_64
-HOST_2ND_ARCH=x86
-HOST_OS=darwin
-HOST_OS_EXTRA=Darwin-15.4.0-x86_64-i386-64bit
-HOST_CROSS_OS=
-HOST_CROSS_ARCH=
-HOST_CROSS_2ND_ARCH=
-HOST_BUILD_TYPE=release
-BUILD_ID=MASTER
-OUT_DIR=out
-============================================
-[1/2] choosing next stage
-Choosing primary.ninja.in for next stage
-[2/2] bootstrap out/soong/.bootstrap/build.ninja.in
-[1/2] choosing next stage
-Choosing main.ninja.in for next stage
-[2/2] bootstrap out/soong/.bootstrap/build.ninja.in
-ninja: no work to do.
-Running kati to generate build-aosp_arm.ninja...
-out/build-aosp_arm.ninja is missing, regenerating...
-2016-05-09 11:01:54.710 xcodebuild[13571:127083] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XcodeColors.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-============================================
-PLATFORM_VERSION_CODENAME=REL
-PLATFORM_VERSION=6.0.1
-TARGET_PRODUCT=aosp_arm
-TARGET_BUILD_VARIANT=eng
-TARGET_BUILD_TYPE=release
-TARGET_BUILD_APPS=
-TARGET_ARCH=arm
-TARGET_ARCH_VARIANT=armv7-a
-TARGET_CPU_VARIANT=generic
-TARGET_2ND_ARCH=
-TARGET_2ND_ARCH_VARIANT=
-TARGET_2ND_CPU_VARIANT=
-HOST_ARCH=x86_64
-HOST_2ND_ARCH=x86
-HOST_OS=darwin
-HOST_OS_EXTRA=Darwin-15.4.0-x86_64-i386-64bit
-HOST_CROSS_OS=
-HOST_CROSS_ARCH=
-HOST_CROSS_2ND_ARCH=
-HOST_BUILD_TYPE=release
-BUILD_ID=MASTER
-OUT_DIR=out
-============================================
-Checking build tools versions...
-build/core/main.mk:148: ************************************************************
-build/core/main.mk:149: You are building on a case-insensitive filesystem.
-build/core/main.mk:150: Please move your source tree to a case-sensitive filesystem.
-build/core/main.mk:151: ************************************************************
-build/core/main.mk:152: *** Case-insensitive filesystems not supported.
-make: *** [out/build-aosp_arm.ninja] Error 1
-{% endhighlight %}
-
-创建一个区分大小写的android卷：
-{% highlight shell %}
-$ hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 60g -volname android /Volumes/Samsung_T1/android.dmg // 移动硬盘Samsung_T1
-{% endhighlight %}
-
-生成位置 /Volumes/Samsung_T1/android.dmg.sparseimage，双击打开android卷，将AOSP目录拷贝至android卷，再一次执行编译命令，报错：
 
 {% highlight shell %}
 Unsupported curl, please use a curl not based on SecureTransport
