@@ -30,7 +30,7 @@ $ openssl md5 aosp-latest.tar
 
 创建一个区分大小写的android卷：
 {% highlight shell %}
-$ hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 60g -volname android /Volumes/Samsung_T1/android.dmg // 移动硬盘Samsung_T1
+$ hdiutil create -type SPARSE -fs 'Case-sensitive Journaled HFS+' -size 80g -volname android /Volumes/Samsung_T1/android.dmg // 移动硬盘Samsung_T1
 {% endhighlight %}
 
 生成位置 /Volumes/Samsung_T1/android.dmg.sparseimage。双击打开android卷，将源码拷贝到android卷中，解压源码：
@@ -83,32 +83,7 @@ $ make install
 $ sudo vim /etc/paths
 {% endhighlight %}
 
-在文件开头添加/usr/local/curl/bin,保存退出。再一次执行编译命令，发现一直卡在**jack server**([Jack官方介绍 ](https://source.android.com/source/jack.html#using_jack_in_your_android_build)):
-{% highlight shell %}
-Ensure Jack server is installed and started
-Writing client settings in $HOME/jack-settings
-Installing jack server in "$HOME/.jack-server"
-[  4% 628/14467] Building with Jack: out/target/common/obj/J...A_LIBRARIES/libprotobuf-java-nano_intermediates/classes.jack
-{% endhighlight %}
-
-由于我是在移动硬盘上安装，感觉是这两个进程和我的/Volumes/android卷通信存在问题，想到能不能将jack-server和jack-settings这两个进程在/Volumes/android运行，找到jack工具路径:
-{% highlight shell %}
-$ cd /prebuilts/sdk/tools
-{% endhighlight %}
-
-编辑**jack-diagnose**、**jack-admin**、**jack**三个文件，将
-{% highlight shell %}
-#JACK_HOME="${JACK_HOME:=$HOME/.jack-server}"
-#CLIENT_SETTING="${CLIENT_SETTING:=$HOME/.jack-settings}"
-{% endhighlight %}
-
-替换成：
-{% highlight shell %}
-JACK_HOME="${JACK_HOME:=/Volumes/android/.jack-server}"
-CLIENT_SETTING="${CLIENT_SETTING:=/Volumes/android/.jack-settings}"
-{% endhighlight %}
-
-重启jack-server和jack-settings，再一次执行编译命令，报错：
+在文件开头添加/usr/local/curl/bin,保存退出。再一次执行编译命令，报错：
 {% highlight shell %}
 FAILED: /bin/bash out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/dex-dir/classes.dex.rsp
 Out of memory error (version 1.2-rc1 'Carnac' (296000 4ba365ab8a3d2c7e55c3428f919af59e687258fa by android-jack-team@google.com)).
@@ -122,7 +97,7 @@ make: *** [ninja_wrapper] Error 1
 
 执行：
 {% highlight shell %}
-$ java -Xmx2000M -Xms1000M -XshowSettings:all
+$ java -Xmx3072M -Xms2048M -XshowSettings:all
 {% endhighlight %}
 
 再一次执行编译命令，成功。
