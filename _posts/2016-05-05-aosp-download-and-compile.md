@@ -100,7 +100,29 @@ make: *** [ninja_wrapper] Error 1
 $ java -Xmx3072M -Xms2048M -XshowSettings:all
 {% endhighlight %}
 
-再一次执行编译命令，成功。
+再一次执行编译命令：
+{% highlight shell %}
+[ 99% 4568/4570] Target system fs image: out/target/product/generic/obj/PACKAGING/systemimage_intermediates/system.img
+Running:  mkuserimg.sh out/target/product/generic/system out/target/product/generic/obj/PACKAGING/systemimage_intermediates/system.img ext4 system 1610612736 -D out/target/product/generic/system -L system out/target/product/generic/root/file_contexts.bin
+make_ext4fs -T -1 -S out/target/product/generic/root/file_contexts.bin -L system -l 1610612736 -a system out/target/product/generic/obj/PACKAGING/systemimage_intermediates/system.img out/target/product/generic/system out/target/product/generic/system
+Creating filesystem with parameters:
+    Size: 1610612736
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 8192
+    Inode size: 256
+    Journal blocks: 6144
+    Label: system
+    Blocks: 393216
+    Block groups: 12
+    Reserved block group size: 95
+Created filesystem with 1487/98304 inodes and 105421/393216 blocks
+[100% 4570/4570] Install system fs image: out/target/product/generic/system.img
+out/target/product/generic/system.img+ maxsize=1644333504 blocksize=2112 total=1610612736 reserve=16610880
+[100% 4570/4570] Checking build with Jack: out/target/common/obj/APPS/EmailTests_intermediates/jack.check.timestamp
+{% endhighlight %}
+
+成功，输出目录为/Volumes/Android/AOSP/out/target/product/generic，包含**system.img**、**ramdisk.img**、**userdata.img**等。
 
 ### 查看源码
 
