@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Android 6.0下载与编译
+title: 写给将要三十岁的自己
 date: 2016-07-16 23:21:00
-category: "写给将要三十岁的自己"
+category: "生活"
 ---
 
     此刻，老婆和阳阳，老妈和阿姨，都睡着了。
